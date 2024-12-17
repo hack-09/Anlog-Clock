@@ -1,0 +1,113 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header,footer {
+  background-color: #4CAF50 !important;
+}
+
+/* Main Content Styles */
+main h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #4CAF50;
+}
+
+section.get-involved-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+/* Volunteer Opportunities Styles */
+.opportunities {
+  flex-basis: 32%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.box{
+  min-width: 40vw;
+  margin: 0 5%;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+.box h3 {
+  font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.opportunities ul {
+  margin-left: 20px;
+}
+
+.opportunities li {
+  margin-bottom: 10px;
+}
+
+/* Campaigns and Events Styles */
+.campaigns-events {
+  flex-basis: 32%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.campaigns-events ul {
+  margin-left: 20px;
+}
+
+.campaigns-events li {
+  margin-bottom: 10px;
+}
+
+/* Donations Styles */
+.donations {
+  flex-basis: 32%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.donations p {
+  margin-bottom: 15px;
+}
+
+.donate-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.donate-btn:hover ,a:hover{
+  background-color: #40f449;
+}
+
+
+@media screen and (max-width:1140px) {
+  section.get-involved-section {
+    width: 95%;
+}
+}

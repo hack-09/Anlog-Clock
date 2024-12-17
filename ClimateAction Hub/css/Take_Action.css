@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Calligraffitti&family=Ubuntu&display=swap');
+
+/* Global styles */
+body {
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+h1, h2, h3 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+main h1 {
+  color: #009f05;
+  font-size: 3rem;
+}
+
+
+img{
+  max-width: 40%;
+  margin: 0 65px;
+  max-height: 243px;
+}
+
+.take-action-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.background {
+  display: flex;
+  min-width: 57vw;
+  margin: 0 5%;
+  background-color: #f8f8f888;
+  padding: 40px;
+  background-color: rgb(239, 234, 234);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.take-action-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #4CAF50;
+}
+
+.take-action-section ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.take-action-section li {
+  font-family: unset;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  list-style: circle;
+}
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .take-action-section div {
+    flex-basis: 100%;
+  }
+  img {
+    max-width: 100%;
+    margin: 5%;
+}
+  .background{
+    flex-direction: column;
+  }
+}

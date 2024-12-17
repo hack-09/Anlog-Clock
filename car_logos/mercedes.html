@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .circle{
+            width:300px;
+            height: 300px;
+            border: 15px solid rgb(164, 164, 164);
+            border-radius: 50%;
+            position: relative;
+            animation: rotate 2s linear infinite;
+        }
+        .line1{
+            height: 150px;
+            width: 10px;
+            background: rgb(164, 164, 164);
+            border-radius: 0 50px 0 0;
+            transform: rotate(5deg);
+            position: absolute;
+            left: 120px;
+        }
+        .line2{
+            height: 150px;
+            width: 10px;
+            background: rgb(164, 164, 164);
+            border-radius: 50px 0 0 0;
+            transform: rotate(-5deg);
+            position: absolute;
+            left: 132px;
+        }
+        .first{
+            position: relative;
+            left: 10px;
+        }
+        .second{
+            transform: rotate(-120deg);
+            position: relative;
+            left: -150px;
+            top: 210px;
+        }
+        .third{
+            transform: rotate(120deg);
+            position: relative;
+            left: 120px;
+            top: 245px;
+        }
+
+        @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="circle">
+        <div class="line">
+            <div class="first">
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </div>
+            <div class="second">
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </div>
+            <div class="third">
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

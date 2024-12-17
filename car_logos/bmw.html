@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .circle{
+            width:200px;
+            height: 200px;
+            border: 100px solid black;
+            border-radius: 50%;
+            position: relative;
+        }
+        .small-circle{
+            animation: rotate 2s linear infinite;
+        }
+        .small-circle-1{
+            width:100px;
+            height: 100px;
+            background: #013b97;
+            border-radius: 100px 0 0 0;
+            position: relative;
+        }
+        .small-circle-2{
+            left: 100px;
+            width:100px;
+            height: 100px;
+            background: #013b97;
+            border-radius: 0 0 100px 0;
+            position: relative;
+            /* transform: rotate(180deg); */
+        }
+        span{
+            font-size: 10vh;
+            font-weight: bolder;
+            color: aliceblue;
+            position: absolute;
+        }
+        .b{
+            transform: rotate(-40deg);
+            left: -20px;
+            top: -50px; 
+        }
+        .m{
+            left: 65px;
+            top: -80px;  
+        }
+        .w{
+            transform: rotate(40deg);
+            left: 160px;
+            top: -50px;  
+        }
+        @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="circle">
+        <span class="b">B</span>
+        <span class="m">M</span>
+        <span class="w">W</span>
+        <div class="small-circle">
+            <div class="small-circle-1"></div>
+            <div class="small-circle-2"></div>
+        </div>
+    </div>    
+</body>
+</html>

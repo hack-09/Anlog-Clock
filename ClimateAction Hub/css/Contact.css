@@ -1,0 +1,119 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+header,footer {
+  background-color: #4CAF50 !important;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+section.contact-support-section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Contact Information Styles */
+.contact-info {
+  flex-basis: 48%;
+  background-color: #feffec;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.contact-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #4CAF50;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Support Section Styles */
+.support-section {
+  flex-basis: 48%;
+  background-color: #feffec;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.support-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #4CAF50;
+}
+
+.support-section p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+#supportForm {
+  margin-bottom: 20px;
+}
+
+#supportForm label {
+  display: block;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+#supportForm input, #supportForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#supportForm textarea {
+  resize: vertical;
+}
+
+#supportForm button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#supportForm button:hover {
+  background-color: #45A048;
+}
+
+
+
+@media (max-width: 768px) {
+  main{
+    padding: 20px 0;
+  }
+  #supportForm input, #supportForm textarea {
+    width: 90%;
+  }
+}

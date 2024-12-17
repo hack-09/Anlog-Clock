@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClimateAction Hub</title>
+
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/SocialMedia.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/facts.css">
+  <link rel="stylesheet" href="css/about.css">
+  <!-- Include Chart.js library from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>ClimateAction Hub</h1>
+    <div class="hamburger-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <hr class="title">
+    <nav>
+      <ul class="menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="Resources.html">Climate Resources</a></li>
+        <li><a href="Interactive.html">Interactive Tools</a></li>
+        <li><a href="news.html">News & Updates</a></li>
+        <li><a href="Solutions.html">Climate Solutions</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <!-- Add the hamburger menu button here -->
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="banner">
+      <div class="banner-content">
+        <h2>Take Action Today</h2>
+        <p>Together, we can combat climate change and create a sustainable future for all.</p>
+        <div class="cta-buttons">
+          <a href="get.html" class="cta-btn">Get Involved</a>
+          <a href="Take_Action.html" class="cta-btn">Take Action</a>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="climate-facts-section background">
+      <h2>Climate Change Facts</h2>
+      <div class="infographic">
+        <canvas id="climateChart" width="10" height="10"
+          style="display: block; box-sizing: border-box; height: 440px; width: 20px;"></canvas>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="about" class="about-section background">
+      <h2>About ClimateAction Hub</h2>
+      <p>
+        ClimateAction Hub is a dedicated platform committed to raising awareness
+        and encouraging individuals to take meaningful steps towards combating climate change.
+      </p>
+      <h3>Mission and Vision</h3>
+      <p>
+        Our mission is to empower individuals, communities, and organizations to take action
+        in combating climate change and promoting environmental sustainability.
+      </p>
+      <p>
+        Our vision is a world where every individual recognizes their role in preserving the planet
+        and works together to create a greener, cleaner, and sustainable future for all.
+      </p>
+
+      <h3>Our Objectives</h3>
+      <ul>
+        <li>1. Raise awareness about the impacts of climate change.</li>
+        <li>2. Encourage and facilitate eco-friendly practices in daily life.</li>
+        <li>3. Support and collaborate with environmental organizations and initiatives.</li>
+        <li>4. Promote sustainable solutions and technologies.</li>
+      </ul>
+      <h2>Past Achievements</h2>
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+      </ul>
+
+      <h2>Ongoing Projects</h2>
+      <ul>
+        <li>Project 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Project 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+        <li>Project 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+      </ul>
+    </section>
+
+    <!-- <section class="team-section background">
+      <h2>Our Team</h2>
+      <div class="team-member ">
+        <img src="path/to/member1.jpg" alt="Team Member 1">
+        <h3>John Doe</h3>
+        <p>Co-Founder & CEO</p>
+      </div>
+      <div class="team-member">
+        <img src="path/to/member2.jpg" alt="Team Member 2">
+        <h3>Jane Smith</h3>
+        <p>Environmental Specialist</p>
+      </div>
+    </section> -->
+    <hr>
+    <section class="social-media-section background">
+      <div class="social-links">
+        <h3>Follow us on Social Media:</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/climateactionhub" target="_blank">Facebook</a></li>
+          <li><a href="https://www.twitter.com/climateactionhub" target="_blank">Twitter</a></li>
+          <li><a href="https://www.instagram.com/climateactionhub" target="_blank">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/company/climateactionhub" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media Sharing Buttons -->
+      <div class="social-sharing">
+        <h3>Share this content:</h3>
+        <!-- Add social sharing buttons here using external libraries or custom code -->
+        <button class="facebook-share">Share on Facebook</button>
+        <button class="twitter-share">Share on Twitter</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 ClimateAction Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="js/facts.js"></script>
+  <script src="js/hamburger.js"></script>
+  
+</body>
+
+</html>

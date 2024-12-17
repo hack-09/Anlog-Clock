@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .circle{
+            width:200px;
+            height: 200px;
+            border: 50px solid rgb(1, 1, 1);
+            border-radius: 50%;
+            position: relative;
+            /* animation: rotate 2s linear infinite;  */
+        }
+        .small-circle{
+            /* animation: rotate 2s linear infinite; */
+        }
+        .small-circle-1{
+            width:100px;
+            height: 100px;
+            background: #013b97;
+            border-radius: 100px 0 0 0;
+            position: relative;
+        }
+        .small-circle-2{
+            left: 100px;
+            width:100px;
+            height: 100px;
+            background: #013b97;
+            border-radius: 0 0 100px 0;
+            position: relative;
+            /* transform: rotate(180deg); */
+        }
+        span{
+            font-size: 23vh;
+            /* font-family: sans-serif; */
+            color: rgb(180, 180, 180);
+            position: absolute;
+        }
+        span.first{
+            left: 30px;
+        }
+        span.second{
+            font-size: 23vh;
+            top: 16px;
+            left: 58px;
+        }
+        @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="circle">
+        <div class="small-circle">
+            <span class="first">R</span>
+            <span class="second">R</span>
+        </div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #007bff !important;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #007bff;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #007bff;
+}
+
+.box{
+  display: flex;
+}
+img{
+  max-width: 40%;
+  margin: 0 65px;
+  max-height: 243px;
+}
+section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #444444;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section li,
+section p {
+  margin-bottom: 0.5rem;
+  font-family: cursive;
+  font-size: 1.3rem;
+  color: rgb(0, 57, 0);
+  position: relative;
+}
+
+section li::before {
+  content: "\2022";
+  position: absolute;
+  left: -1.5rem;
+  color: #007bff;
+}
+
+/* Climate Solutions Section Styles */
+.climate-solutions-section {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.innovative-technologies,
+.case-studies,
+.collaboration-opportunities {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.innovative-technologies h3,
+.case-studies h3,
+.collaboration-opportunities h3 {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  background-color: #007bff !important;
+}
+
+
+@media screen and (max-width:1140px) {
+
+  .innovative-technologies,
+  .case-studies,
+  .collaboration-opportunities {
+    width: 92%;
+  }
+
+  img{
+    max-width: 100% !important;
+    margin: 0;
+  }
+
+  .box{
+    flex-direction: column-reverse;
+  }
+  section li,
+  section p {
+    font-size: 1rem;
+  }
+
+  .innovative-technologies h3,
+  .case-studies h3,
+  .collaboration-opportunities h3 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin: 0.1rem;
+  }
+}

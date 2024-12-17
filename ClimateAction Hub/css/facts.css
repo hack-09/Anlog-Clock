@@ -1,0 +1,27 @@
+
+.climate-facts-section {
+    padding: 2rem 0;
+  }
+  
+  .climate-facts-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-family: cursive;
+    color: rgb(76, 128, 130);
+    font-weight: 1000;
+    text-align: center;
+  }
+  
+  .infographic {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width:1140px){
+    .climate-facts-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  

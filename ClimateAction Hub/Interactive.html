@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimateAction Hub - Interactive Tools</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/Interactive.css">
+    <script src="js/hamburger.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>ClimateAction Hub</h1>
+        <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <hr class="title">
+        <nav>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Resources.html">Climate Resources</a></li>
+                <li><a href="Interactive.html">Interactive Tools</a></li>
+                <li><a href="news.html">News & Updates</a></li>
+                <li><a href="Solutions.html">Climate Solutions</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="interactive-tools-section">
+            <h2>Interactive Tools</h2>
+
+            <!-- Carbon Footprint Calculator -->
+            <div class="carbon-footprint-calculator">
+                <h3>Carbon Footprint Calculator</h3>
+                <p>Find out your carbon footprint and learn how to reduce it:</p>
+                <form id="carbonCalculatorForm">
+                    <label for="electricity">Electricity Usage (kWh per month):</label>
+                    <input type="number" id="electricity" required>
+
+                    <label for="transport">Transportation (miles per month):</label>
+                    <input type="number" id="transport" required>
+
+                    <label for="food">Food Consumption (lbs per month):</label>
+                    <input type="number" id="food" required>
+
+                    <button type="submit">Calculate</button>
+                </form>
+                <div id="carbonFootprintResult">
+                    <!-- Display the result of the carbon footprint calculation here -->
+                </div>
+            </div>
+
+            <!-- Interactive Map -->
+            <div class="interactive-map">
+                <h3>Interactive Map</h3>
+                <p>Explore climate change effects and vulnerable areas:</p>
+                <div id="map">
+                    <!-- Display the interactive map here using JavaScript or external libraries -->
+                </div>
+            </div>
+
+            <!-- Climate Action Quiz -->
+            <div class="climate-action-quiz">
+                <h3>Climate Action Quiz</h3>
+                <p>Test your knowledge about climate action:</p>
+                <form id="climateQuizForm">
+                    <p>Question 1: What is the main greenhouse gas responsible for climate change?</p>
+                    <label>
+                        <input type="radio" name="q1" value="a"> CO2
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b"> O2
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c"> N2
+                    </label>
+
+                    <p>Question 2: What is the largest source of carbon dioxide emissions worldwide?</p>
+                    <label>
+                        <input type="radio" name="q2" value="a"> Transportation
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b"> Agriculture
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c"> Power generation
+                    </label>
+
+                    <p>Question 3: Which of the following is a renewable energy source?</p>
+                    <label>
+                        <input type="radio" name="q3" value="a"> Coal
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="b"> Solar
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c"> Natural gas
+                    </label>
+
+                    <!-- Add more questions and options as needed -->
+
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="quizResult">
+                    <!-- Display the quiz result here using JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 ClimateAction Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/Interactive.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .circle{
+            width: 400px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: darkblue;
+        }
+        .circleLeft{
+            position: relative;
+            top: 130px;
+            width: 190px;
+            height: 180px;
+            border-radius: 0 5%;
+            background-color: rgb(255, 255, 255);
+        }
+        .circleRight{
+            position: relative;
+            left: 210px;
+            top: -50px;
+            width: 190px;
+            height: 180px;
+            border-radius: 5% 0;
+            background-color: rgb(255, 255, 255);
+        }
+        .smallCircle-1{
+            position: relative;
+            top: 20px;
+            width: 170px;
+            height: 150px;
+            border-radius: 0 5% 0 100%;
+            background-color: rgb(7, 54, 129);
+        }
+        .smallCircle-2{
+            position: relative;
+            top: 20px;
+            left: 20px;
+            width: 170px;
+            height: 150px;
+            border-radius: 5% 0 100% 0;
+            background-color: rgb(7, 54, 129);
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <div class="circleLeft">
+            <div class="smallCircle-1"></div>
+        </div>
+        <div class="circleRight">            
+            <div class="smallCircle-2" >
+        </div>
+</div>
+    </div>
+</body>
+</html>
